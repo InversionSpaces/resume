@@ -1,0 +1,146 @@
+% neomake: skip
+\documentclass{article}
+
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{indentfirst}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{fontawesome}
+
+\usepackage{geometry}
+\geometry{top=20mm}
+\geometry{bottom=10mm}
+\geometry{left=20mm}
+\geometry{right=10mm}
+
+\pagenumbering{gobble}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks  = true,
+            linkcolor   = blue,
+            urlcolor    = blue,
+            citecolor   = black,
+            anchorcolor = black]{hyperref}
+
+\renewcommand{\maketitle}{
+    \Huge
+    \begin{center}
+        \textbf{Воробьев Михаил}
+    \end{center}
+
+    \large
+    \begin{minipage}{0.4\textwidth}
+        \faMobile \hspace{0.1cm} $\boldsymbol{+}$7(977)938-28-68\\[0.3em]
+        \faEnvelope \hspace{0.1cm} \href{mailto:vorobev.mk@phystech.edu}{vorobev.mk@phystech.edu}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.4\textwidth}
+        \begin{flushright}
+            \faPaperPlane \hspace{0.1cm} \href{https://t.me/purely_injected}{@purely\_injected}\\[0.3em]
+            \faGithub \hspace{0.1cm} \href{https://github.com/InversionSpaces}{InversionSpaces}
+        \end{flushright}
+    \end{minipage}
+}
+
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bf\raggedright}{}{0.5em}{}[{\titlerule[1pt]}]
+\titlespacing{\section}{0pt}{3pt}{7pt}
+\titleformat{\subsection}{\large\bfseries\raggedright}{}{0em}{\underline}%[\rule{3cm}{.2pt}]
+\titlespacing{\subsection}{0pt}{7pt}{7pt}
+
+
+\newcommand{\entry}[3]{
+    \begin{minipage}[t]{.11\linewidth}
+        \hfill \textsc{#1}
+    \end{minipage}
+    \hfill\vline\hfill
+    \begin{minipage}[t]{.80\linewidth}
+        \textbf{#2}\\
+        \footnotesize{#3}
+    \end{minipage}
+}
+
+\begin{document}
+    \maketitle
+    \small
+    
+    \section{Образование}
+        \entry {2019 -- 2023}
+        {Московский физико-технический институт\\
+         Физтех-школа прикладной математики и информатики\\
+         Информатика и вычислительная техника}
+        {Очная форма обучения, бакалавриат, 2 курс}
+
+
+    \section{Курсы и конкурсы}
+        \entry {2019}
+        {Технотрек Mail.ru Group\\
+        Введение в промышленное программирование и структуры данных}
+        {Язык C}
+
+        \vspace{.2cm}
+
+        \entry {2017 -- 2019}
+        {Воздушно-инженерная школа Cansat в России\\
+        Разработка бортового кода для спускаемого аппарата}
+        {Язык C для AVR и STM32}        
+
+    \section{Проекты}
+    \entry {2019}
+    {PEGgen - генератор C++ кода для парсера, применяющего рекурсивный спуск\\
+    На основе контекстно-свободной грамматики в BNF
+    }
+    {Язык Python3} 
+    
+    \vspace{.2cm}
+    
+    \entry {2020}
+    {Сайт Физтех-школы прикладной математики и информатики\\
+    Разработка Frontend}
+    {Язык JS и React}
+
+    \section{Навыки}
+        \begin{multicols}{2}
+            \subsection{Языки Программирования}
+                \begin{itemize}
+                    \item C/C$\boldsymbol{++}$
+                    \item Python3
+                    \item x86 Assembly
+                    \item JavaScript
+                    \item Scheme
+                \end{itemize}
+
+            \subsection{Операционные системы}
+               \begin{itemize}
+                    \item GNU/Linux (debian-based, arch-based)
+               \end{itemize}
+            \subsection{Языки}
+                \begin{itemize}
+                    \item Русский - родной
+                    \item English - Intermediate
+                \end{itemize}
+            \subsection{Инструменты}
+                \begin{itemize}
+                    \item git
+                    \item docker
+                    \item \LaTeX
+                \end{itemize}
+        \end{multicols}
+
+    \section{Другое}
+        \begin{itemize}
+            \item Люблю передавать свои знания при возможности - объяснять или учить
+            \item Люблю гулять и кататься на велосипеде
+            \item Люблю тайлинговые оконные менеджеры
+        \end{itemize}
+        
+    \vspace{\fill}
+    \begin{center}
+        \large
+        \href {https://github.com/InversionSpaces/resume}{Актуальная версия этого резюме}
+    \end{center}
+\end{document}
