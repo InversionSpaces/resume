@@ -2,6 +2,9 @@
 \documentclass{article}
 
 \usepackage{cmap}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{makecell}
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
@@ -10,12 +13,13 @@
 \usepackage{amsmath}
 \usepackage{multicol}
 \usepackage{fontawesome}
+\usepackage{verbatim}
 
 \usepackage{geometry}
 \geometry{top=10mm}
 \geometry{bottom=10mm}
-\geometry{left=20mm}
-\geometry{right=10mm}
+\geometry{left=15mm}
+\geometry{right=15mm}
 
 \pagenumbering{gobble}
 
@@ -63,124 +67,142 @@
 
 
 \newcommand{\entry}[3]{
-    \begin{minipage}[t]{.11\linewidth}
-        \hfill \textsc{#1}
+	\begin{tabular}{ c | c }
+    \begin{minipage}{0.05\linewidth}
+    	\begin{center}
+    		#1
+    	\end{center}
+    \end{minipage} 
+    &
+    \begin{minipage}{0.85\linewidth}
+        \textbf{#2} \\ \footnotesize{#3}
     \end{minipage}
-    \hfill\vline\hfill
-    \begin{minipage}[t]{.80\linewidth}
-        \textbf{#2} \\
-        \footnotesize{#3}
-    \end{minipage}
+    \end{tabular}
 }
+
+\newcommand{\interval}[2]{
+	#1 \\ $\downarrow$ \\ #2
+}
+
+
+\setlist[itemize]{noitemsep, topsep=0pt}
 
 \begin{document}
     \maketitle
     \small
     
     \section{Образование}
-        \entry {2019 -- н.в.}
+        \entry {\interval{2019}{н.в.}}
         {Московский физико-технический институт\\
          Физтех-школа прикладной математики и информатики\\
          Информатика и вычислительная техника}
-        {Очная форма обучения, бакалавриат, 2 курс.}
+        {Очная форма обучения, бакалавриат.}
 
-    \section{Работа}
-        \entry { 2021 -- н.в.}
+    \section{Работа и волонтерство}
+        \entry {\interval{Фев. 2021}{н.в.}}
         {Тинькофф \\
          Отдел кредитных и брокерских систем \\
          Младший специалист}
-        {Бэкенд разработка на Scala.}   
+        {Бэкенд разработка на Scala:
+        	\begin{itemize}
+        		\item Порт микросервиса вебхуков на ZIO и добавление интеграции с Vault.
+        		\item Создание пайплайнов Mongo Aggregation Framework.
+        		\item Написание миграций liquibase.
+        		\item Имплементация бизнес функционала в приложении онлайн брокера.
+        	\end{itemize}
+        }
+        
+        \vspace{.1cm}
+        
+        \entry {Июль 2021}
+        {Летняя школа Слон в Пущино \\
+         Волонтер-преподаватель}
+        {Проведение курсов:
+        	\begin{itemize}
+        		\item Формальные языки.
+        		\item Математическая логика.
+        	\end{itemize}
+    	}  
 
     \section{Курсы}
-        \entry {2020 \\
-           %\href {https://github.com/InversionSpaces/problems} {Репозиторий} 
-            }
-            {Тинькофф Финтех \\
-            Курс разработки на Scala }
-            { Язык Scala. Разработка RESTful сервиса StopLoss-TakeProfit для тинькофф инвестиций при помощи akka-http, sttp, slick. }
-        
-        \vspace{.1cm}
-        
-        \entry {2019 -- 2020 \\
+    
+    \entry {2020
        %\href {https://github.com/InversionSpaces/problems} {Репозиторий} 
         }
-        {Технотрек Mail.ru Group \\
-        Курс "Введение в промышленное программирование и структуры данных"}
-        { Языки C, C++. Разработка простого эмулятора стековой машины и простого компилятора высокоуровнего языка для неё. }
-          
-        \vspace{.1cm}
-        
-        \entry {2018 \\
-       %\href {https://gitlab.informatics.ru/2017-2018/53/HoE} {Репозиторий} 
-        }
-        {Московская школа программистов при Яндексе \\
-        Курс "Промышленное программирование"}
-        { Язык Python3. Frontend и backend разработка маленького видео-хостинга. Переписывание модуля разбора изображения с использованием OpenCV, ускоревшее его в несколько раз. }  
-        
-        \vspace{.1cm}  
+        {Тинькофф Финтех \\
+        Курс разработки на Scala }
+        { Язык Scala. Разработка RESTful сервиса StopLoss-TakeProfit для тинькофф инвестиций. }
     
-        \entry {2017 -- 2019 \\
-       %\href {https://github.com/Gravifarsh/FreyaCode} {Репозиторий} 
-        }
-        {Воздушно-инженерная школа Cansat в России\\
-        Разработка спускаемого аппарата}
-        { Язык C для AVR и STM32. Ведущий разработчик в команде. Единственный разработчик в год победы моей команды в регулярной лиге. } 
-        
-        \vspace{.1cm}
-        
-        \entry {2017 -- 2019 \\
-       %\href {} {Репозиторий} 
-        }
-        {Летняя школа "Слон" в Пущино\\
-        Проектная деятельность}
-        { Языки C$\boldsymbol{\#}$, Java, C++. Разработка ИИ для MOBA игры (Mail.ru CodeWizards) на C$\boldsymbol{\#}$, клиентской части клиент-серверного приложения для Android на Java, упрощённой реализации блокчейна на C$\boldsymbol{++}$. }
-        
+    \vspace{.1cm}
+    
+    \entry {\interval{2019}{2020}
+   %\href {https://github.com/InversionSpaces/problems} {Репозиторий} 
+    }
+    {Технотрек Mail.ru Group \\
+    Курс "Введение в промышленное программирование и структуры данных"}
+    { Языки C, C++. Разработка эмулятора стековой машины и компилятора высокоуровнего языка. }
+      
+    \vspace{.1cm}
+    
+    \entry {2018
+   %\href {https://gitlab.informatics.ru/2017-2018/53/HoE} {Репозиторий} 
+    }
+    {Московская школа программистов при Яндексе \\
+    Курс "Промышленное программирование"}
+    { Язык Python3. Frontend и backend разработка маленького видео-хостинга. \\ Переписывание модуля разбора изображения с использованием OpenCV. }  
+    
+    \vspace{.1cm}  
+
+    \entry {\interval{2017}{2019}
+   %\href {https://github.com/Gravifarsh/FreyaCode} {Репозиторий} 
+    }
+    {Воздушно-инженерная школа Cansat в России\\
+    Разработка спускаемого аппарата}
+    { Язык C для AVR и STM32. Ведущий разработчик в команде. \\ Единственный разработчик в год победы команды в регулярной лиге. } 
+    
+    \vspace{.1cm}
+    
+    \begin{comment}
+    
+    \entry {\interval{2017}{2019}
+   %\href {} {Репозиторий} 
+    }
+    {Летняя школа "Слон" в Пущино\\
+    Проектная деятельность}
+    { Языки C\texttt{\#}, Java, C++. Разработка ИИ для MOBA игры (Mail.ru CodeWizards) на C\texttt{\#}, клиентской части клиент-серверного приложения для Android на Java, упрощённой реализации блокчейна на C\texttt{++}. }
+    
+    \end{comment}
+     
     \section{Проекты}
         
-    \entry {2020 \\
-    \href {https://gitlab.com/Inversion/gainy} {Репозиторий} }
-    {Gainy - StopLoss-TakeProfit для тинькофф.инвестиции \\
+    \entry {2020}
+    {\href {https://gitlab.com/Inversion/gainy}{gainy} - StopLoss-TakeProfit для тинькофф.инвестиции \\
     Сервис с HTTP RESTful API}
     { Язык Scala. Реализация сервиса StopLoss-TakeProfit, интегрированного с тинькофф.инвестиции. } 
     
     \vspace{.1cm}
         
-    \entry {2019 \\
-    \href {https://github.com/InversionSpaces/PEGgen} {Репозиторий} }
-    {PEGgen - генератор парсеров \\
+    \entry {2019}
+    {\href {https://github.com/InversionSpaces/PEGgen}{PEGgen} - генератор парсеров \\
     Утилита комнадной строки}
     { Язык Python3. Реализация генерации кода парсера на рекурсивном спуске из формальной грамматики.} 
     
+    
     \vspace{.1cm}
     
-    \entry {2017 -- 2019 \\
-    \href {https://github.com/cansat-rsce/librscs} {Репозиторий} }
-    {librscs - библиотека для разработчиков CanSat \\
+    \entry {\interval{2017}{2019}}
+    {\href {https://github.com/cansat-rsce/librscs} {librscs} - библиотека для разработчиков CanSat \\
     Библиотека драйверов перифирии для микроконтроллеров AVR}
     { Язык C для AVR. Реализация драйвера модема Iridium9602 и тестирование других модулей. } 
 
     \section{Навыки}
-        \begin{multicols}{2}
-            \subsection{Языки программирования}
-                \begin{itemize}
-                    \item C/C$\boldsymbol{++}$
-                    \item Scala
-                    \item Python3
-                    \item x86 Assembly
-                    \item JavaScript
-                    \item Scheme
-                \end{itemize}
-            \subsection{Языки}
-                \begin{itemize}
-                    \item Русский - родной
-                    \item English - Intermediate
-                \end{itemize}
-            \subsection{Инструменты разработки}
-                \begin{itemize}
-                    \item git
-                    \item make
-                \end{itemize}
-        \end{multicols}
+    	\begin{tabular}{ >{\bfseries}r | l }
+    		Языки программирования & Scala, C/C\texttt{++}, Python3 \\
+    		Технологии & MongoDB, PostgreSQL, RabbitMQ  \\
+    		Фреймворки и библиотеки & ZIO, cats, fs2, akka-http \\
+    		Инструменты & git, sbt, liquibase \\
+    		Языки & Русский(родной), English(intermidiate)
+    	\end{tabular} 
         
     \vspace{\fill}
     \begin{center}
