@@ -36,8 +36,8 @@
 \newcommand{\en}[1]{\ifen#1\fi}
 \newcommand{\ru}[1]{\ifru#1\fi}
 
-%\rutrue
-\entrue
+\rutrue
+%\entrue
 
 \renewcommand{\maketitle}{
     \Huge
@@ -82,7 +82,7 @@
 }
 
 \newcommand{\interval}[2]{
-	#1 \\ $\downarrow$ \\ #2
+	#1 - #2
 }
 
 
@@ -91,17 +91,22 @@
 \begin{document}
     \maketitle
     \small
-    
-    \section{\ru{Образование}\en{Education}}
-        \entry {\interval{2019}{\ru{2022}\en{2022}}}
-        {\ru{Московский физико-технический институт}\en{Moscow Institute of Physics and Technology} - \\
-       	\ru{Физтех-школа прикладной математики и информатики}\en{Phystech School of Applied Mathematics and Informatics} - \\
-       	\ru{Информатика и вычислительная техника}\en{Engineering and Computer Science}
-       	}
-        {\ru{Очная форма обучения, бакалавриат, неоконченное (2 курса).}\en{Bachelor's degree, unfinished (2 years).}}
 
-    \section{\ru{Работа и волонтерство}\en{Work and teaching experience}}
-        \entry {\interval{\ru{Фев.}\en{Feb.} 2021}{\ru{Июль}\en{July} 2022}}
+    \section{\ru{Работа и волонтерство}\en{Work and volunteering}}
+        \entry {\interval{2022}{\ru{н.в.}\en{today}}}
+        {Mosaic Research - Crypto HFT - Backend \ru{разработчик}\en{Engineer}}
+        {\ru{Бэкенд разработка на C\texttt{++}}\en{Backend C\texttt{++} development}: 
+        	\begin{itemize}
+        		\item \ru{Разработка и поддержка инфраструктуры для торговли криптовалютами} \en{Development and maintenance of infrastructure for crypto trading}.
+        		\item \ru{Создание}\en{Setting up} CI pipeline \ru{для}\en{for} CMake projects: building, testing, caching, automatic dependecies updating.
+        		\item \ru{Имплементация протокола коммуникации между компонентами с использованием} \en{Implementing microservices communication protocol with} Aeron.
+        		\item \ru{Разработка скриптов и вспомогательных микросервисов на} \en{Developing scripts and small microservices with} python3.
+        	\end{itemize}
+        }
+        
+        \vspace{.1cm}
+        
+        \entry {\interval{2021}{2022}}
         {\ru{Тинькофф}\en{Tinkoff} - \ru{Отдел Кредитных и Брокерских Систем}\en{Credit and Brokerage Systems} - Backend \ru{разработчик}\en{Engineer}}
         {\ru{Бэкенд разработка на Scala}\en{Backend Scala development}: 
         	\begin{itemize}
@@ -109,18 +114,6 @@
         		\item \ru{Разработка с применением брокеров сообщений: RabbitMQ и Kafka}\en{Integration of message brokers: RabbitMQ and Kafka}.
         		\item \ru{Разработка с применением баз данных: MongoDB и PostgreSQL}\en{Integration of databases: MongoDB and PostgreSQL}.
         		\item \ru{Разработка бизнес функционала бэкенда кредитного онлайн брокера}\en{Implementation of several significant buisness features in online credit broker}.
-        	\end{itemize}
-        }
-        
-        \vspace{.1cm}
-        
-        \entry {\interval{\ru{Авг.}\en{Aug.} 2022}{\ru{н.в.}\en{today}}}
-        {Mosaic Research - Crypto HFT - Backend \ru{разработчик}\en{Engineer}}
-        {\ru{Бэкенд разработка на C\texttt{++}}\en{Backend C\texttt{++} development}: 
-        	\begin{itemize}
-        		\item \ru{Разработка и поддержка инфраструктуры для торговли криптовалютами} \en{Development and maintenance of infrastructure for crypto trading}.
-        		\item \ru{Создание}\en{Setting up} CI pipeline \ru{для}\en{for} CMake projects: building, testing, caching, automatic dependecies updating.
-        		\item \ru{Имплементация протокола коммуникации между компонентами с использованием} \en{Implementing microservices communication protocol with} Aeron.
         	\end{itemize}
         }
         
@@ -154,7 +147,7 @@
     
     \vspace{.1cm}
     
-    \entry {\interval{2019}{2020}
+    \entry {2020
    %\href {https://github.com/InversionSpaces/problems} {Репозиторий} 
     }
     {Mail.ru \ru{Технотрек} - \ru{Введение в промышленное программирование и структуры данных}\en{Introduction to production programming and data structures}}
@@ -193,6 +186,14 @@
     \entry {\interval{2017}{2019}}
     {\href {https://github.com/cansat-rsce/librscs} {librscs} - \ru{Библиотека драйверов перифирии для микроконтроллеров AVR}\en{Peripheral drivers library for AVR}}
     { \ru{Язык C для AVR}\en{C for AVR}. \ru{Драйвер модема Iridium9602 и тестирование других модулей}\en{Driver for Iridium9602 modem and testing of other modules}. } 
+
+	\section{\ru{Образование}\en{Education}}
+        \entry {\interval{2019}{\ru{2022}\en{2022}}}
+        {\ru{Московский физико-технический институт}\en{Moscow Institute of Physics and Technology} - \\
+       	\ru{Физтех-школа прикладной математики и информатики}\en{Phystech School of Applied Mathematics and Informatics} - \\
+       	\ru{Информатика и вычислительная техника}\en{Engineering and Computer Science}
+       	}
+        {\ru{Очная форма обучения, бакалавриат.}\en{Bachelor's degree.}}
 
     \section{\ru{Навыки}\en{Skills}}
     	\begin{tabular}{ >{\bfseries}r | l }
