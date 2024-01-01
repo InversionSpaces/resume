@@ -36,8 +36,8 @@
 \newcommand{\en}[1]{\ifen#1\fi}
 \newcommand{\ru}[1]{\ifru#1\fi}
 
-\rutrue
-%\entrue
+%\rutrue
+\entrue
 
 \renewcommand{\maketitle}{
     \Huge
@@ -89,124 +89,134 @@
 \setlist[itemize]{noitemsep, topsep=0pt}
 
 \begin{document}
-    \maketitle
-    \small
+\maketitle
+\small
 
-    \section{\ru{Работа и волонтерство}\en{Work and volunteering}}
-        \entry {\interval{2022}{\ru{н.в.}\en{today}}}
-        {Mosaic Research - Crypto HFT - Backend \ru{разработчик}\en{Engineer}}
-        {\ru{Бэкенд разработка на C\texttt{++}}\en{Backend C\texttt{++} development}: 
-        	\begin{itemize}
-        		\item \ru{Разработка и поддержка инфраструктуры для торговли криптовалютами} \en{Development and maintenance of infrastructure for crypto trading}.
-        		\item \ru{Создание}\en{Setting up} CI pipeline \ru{для}\en{for} CMake projects: building, testing, caching, automatic dependecies updating.
-        		\item \ru{Имплементация протокола коммуникации между компонентами с использованием} \en{Implementing microservices communication protocol with} Aeron.
-        		\item \ru{Разработка скриптов и вспомогательных микросервисов на} \en{Developing scripts and small microservices with} python3.
-        	\end{itemize}
-        }
-        
-        \vspace{.1cm}
-        
-        \entry {\interval{2021}{2022}}
-        {\ru{Тинькофф}\en{Tinkoff} - \ru{Отдел Кредитных и Брокерских Систем}\en{Credit and Brokerage Systems} - Backend \ru{разработчик}\en{Engineer}}
-        {\ru{Бэкенд разработка на Scala}\en{Backend Scala development}: 
-        	\begin{itemize}
-        		\item \ru{Разработка нового и поддержание старого функционала нескольких внутренних микросервисов}\en{Maintenance and development of several in-house microservices}.
-        		\item \ru{Разработка с применением брокеров сообщений: RabbitMQ и Kafka}\en{Integration of message brokers: RabbitMQ and Kafka}.
-        		\item \ru{Разработка с применением баз данных: MongoDB и PostgreSQL}\en{Integration of databases: MongoDB and PostgreSQL}.
-        		\item \ru{Разработка бизнес функционала бэкенда кредитного онлайн брокера}\en{Implementation of several significant buisness features in online credit broker}.
-        	\end{itemize}
-        }
-        
-        \vspace{.1cm}
-        
-        \entry {2021, 2022}
-        {\ru{Летняя Школа Слон в Пущино}\en{Summer School <<Slon>> in Pushchino} - \ru{Волонтер-Преподаватель}\en{Volunteer-Tutor}}
-        {\ru{Проведение курсов}\en{Courses taught}: \ru{Формальные языки}\en{Formal languages}, \ru{Математическая логика}\en{Mathematical logic}, \ru{ФП в }\en{FP in} Scala, Python \ru{с нуля}\en{from scratch}.
-    	}  
+\section{\ru{Работа и волонтерство}\en{Work and volunteering}}
+\entry {\interval{2023}{\ru{н.в.}\en{today}}}
+{Fluence Labs - Aqua Language - \ru{Разработчик компилятора}\en{Compiler Engineer} - Scala}
+{\ru{Разработка компилятора Aqua - языка оркестрации вычислений в одноранговой сети Fluence}\en{Developing compiler for Aqua - language for computation orchestration in Fluence peer-to-peer network}:
+    \begin{itemize}
+        \item \ru{Разработка на всех стадиях компиляции}\en{Development of all compilation stages}: parsing, type checking, IR passes, code generation.
+        \item \ru{Проектирование и реализация}\en{Design and implementation}: boolean algebra, math optimizations, tracing code augmentation.
+        \item \ru{Разработка и поддеражание}\en{Development and maintenance}: LSP server, VSCode extension.
+    \end{itemize}
+}
 
-    \section{\ru{Курсы}\en{Courses}}
-    \entry {2021
-        }
-        {\ru{МФТИ}\en{MIPT} - \ru{Теория и практика многопоточной синхронизации}\en{Concurrency course} }
-        {\ru{Язык C\texttt{++}}\en{C\texttt{++}}. \ru{Реализация библиотеки для работы с многопоточностью}\en{Implementation of simple concurrency library}: fibers, futures, thread pool.  }
-    
-    \vspace{.1cm}
-    
-    \entry {2021
-        }
-        {\ru{МФТИ}\en{MIPT} - \ru{Распределенные системы}\en{Distributed systems} }
-        {\ru{Язык C\texttt{++}}\en{C\texttt{++}}. \ru{Реализация алгоритмов распределенных консенсуса и репликации}\en{Implementation of distributed consensus and replication algorithms}: paxos, multi paxos, raft.  }
-    
-    \vspace{.1cm}
-    
-    \entry {2020
-       %\href {https://github.com/InversionSpaces/problems} {Репозиторий} 
-        }
-        {\ru{Тинькофф.Финтех}\en{Tinkoff.Fintech} - \ru{Курс разработки на Scala}\en{Scala development course} }
-        { \ru{Язык Scala}\en{Scala}. \ru{Разработка RESTful сервиса StopLoss-TakeProfit для тинькофф инвестиций}\en{Impementation of StopLoss-TakeProfit service integrated with tinkoff.investments}. }
-    
-    \vspace{.1cm}
-    
-    \entry {2020
-   %\href {https://github.com/InversionSpaces/problems} {Репозиторий} 
-    }
-    {Mail.ru \ru{Технотрек} - \ru{Введение в промышленное программирование и структуры данных}\en{Introduction to production programming and data structures}}
-    { \ru{Языки C, C\texttt{++}}\en{C, C\texttt{++}}. \ru{Разработка эмулятора стековой машины и компилятора высокоуровнего языка для нее}\en{Implementation of stack machine emulator and high-level language compiler for it}.} 
-    
-    \vspace{.1cm}  
+\vspace{.1cm}
 
-    \entry {\interval{2017}{2019}
-   %\href {https://github.com/Gravifarsh/FreyaCode} {Репозиторий} 
-    }
-    {\ru{Воздушно-инженерная школа CanSat в России}\en{Air engineering school in Russia} - \ru{Разработка спускаемого аппарата}\en{Sounding rocket payload development}}
-    { \ru{Язык C для AVR и STM32}\en{C for AVR and STM32}. \ru{Разработка бортовой прошивки спускаемого аппарата}\en{Development of on-board firmware and peripheral drivers}. } 
-    
-    \vspace{.1cm}
-     
-    \section{\ru{Проекты}\en{Projects}}
-        
-    \entry {2020}
-    {\href {https://gitlab.com/Inversion/gainy}{gainy} - \ru{Сервис с REST API}\en{Service with REST API}}
-    { \ru{Язык Scala}\en{Scala}. \ru{Cервис StopLoss-TakeProfit, интегрированный с тинькофф.инвестиции}\en{StopLoss-TakeProfit service integrated with tinkoff.investments}. } 
-    
-    \vspace{.1cm}
-        
-    \entry {2019}
-    {\href {https://github.com/InversionSpaces/PEGgen}{PEGgen} - \ru{Утилита комнадной строки}\en{Command line utility}}
-    { \ru{Язык Python3}\en{Python3}. \ru{Генерация кода парсера на рекурсивном спуске из формальной грамматики}\en{Generation of recursive descent parser from formal grammar}.} 
-    
-    \vspace{.1cm}
-    
-    \entry {2021}
-    {\href {https://gitlab.com/Inversion/yaelc} {yaelc} - \ru{Компилятор java-подобного языка}\en{Compiler of java-like language}}
-    { \ru{Язык C\texttt{++}}\en{C\texttt{++}}. \ru{Сканер (GNU Flex), LR-парсер (GNU Bison), AST, таблица типов}\en{Scanner (GNU Flex), LR-parser (GNU Bison), AST, type table}.} 
-    
-    \vspace{.1cm}
-    
-    \entry {\interval{2017}{2019}}
-    {\href {https://github.com/cansat-rsce/librscs} {librscs} - \ru{Библиотека драйверов перифирии для микроконтроллеров AVR}\en{Peripheral drivers library for AVR}}
-    { \ru{Язык C для AVR}\en{C for AVR}. \ru{Драйвер модема Iridium9602 и тестирование других модулей}\en{Driver for Iridium9602 modem and testing of other modules}. } 
+\entry {\interval{2022}{2023}}
+{Mosaic Research - Crypto HFT - Backend \ru{разработчик}\en{Engineer} - C\texttt{++}}
+{\ru{Разработка и поддержка инфраструктуры для торговли криптовалютами}\en{Development and maintenance of infrastructure for crypto trading}:
+    \begin{itemize}
+        \item \ru{Имплементация протокола коммуникации между компонентами инфраструктуры с использованием}\en{Implementing microservices communication protocol with} Aeron.
+        \item \ru{Создание}\en{Setting up} CI pipeline \ru{для}\en{for} CMake \ru{проектов}\en{projects}: building, testing, caching, automatic dependecies updating.
+        \item \ru{Разработка скриптов и вспомогательных микросервисов на}\en{Developing scripts and small microservices with} python3.
+    \end{itemize}
+}
 
-	\section{\ru{Образование}\en{Education}}
-        \entry {\interval{2019}{\ru{2022}\en{2022}}}
-        {\ru{Московский физико-технический институт}\en{Moscow Institute of Physics and Technology} - \\
-       	\ru{Физтех-школа прикладной математики и информатики}\en{Phystech School of Applied Mathematics and Informatics} - \\
-       	\ru{Информатика и вычислительная техника}\en{Engineering and Computer Science}
-       	}
-        {\ru{Очная форма обучения, бакалавриат.}\en{Bachelor's degree.}}
+\vspace{.1cm}
 
-    \section{\ru{Навыки}\en{Skills}}
-    	\begin{tabular}{ >{\bfseries}r | l }
-    		\ru{Языки программирования}\en{Programming languages} & Scala, C/C\texttt{++}, Python3 \\
-    		\ru{Технологии}\en{Technologies} & MongoDB, PostgreSQL, RabbitMQ, Kafka  \\
-    		\ru{Фреймворки и библиотеки}\en{Frameworks and libraries} & ZIO, cats, fs2, akka-http, Aeron \\
-    		\ru{Инструменты}\en{Tools} & git, cmake, sbt, Gitlab CI, Github Actions, liquibase \\
-    		\ru{Языки}\en{Languages} & Русский(родной), English(B2)
-    	\end{tabular} 
-        
-    \vspace{\fill}
-    \begin{center}
-        \large
-        \href {https://github.com/InversionSpaces/resume}{\ru{Актуальная версия этого резюме}\en{Up to date version of this CV}}
-    \end{center}
+\entry {\interval{2021}{2022}}
+{\ru{Тинькофф}\en{Tinkoff} - \ru{Отдел Кредитных и Брокерских Систем}\en{Credit and Brokerage Systems} - Backend \ru{разработчик}\en{Engineer} - Scala}
+{\ru{Разработка и поддержание бэкенда кредитного онлайн брокера на микросервисной архитектуре}\en{Development and maintenance of online credit broker backend on microservice architecture}:
+    \begin{itemize}
+        \item \ru{Проектирование и реализация бизнес функционала.}\en{Design and implementation of business functionality.}.
+        \item \ru{Разработка с применением брокеров сообщений: RabbitMQ и Kafka}\en{Integration of message brokers: RabbitMQ and Kafka}.
+        \item \ru{Разработка с применением баз данных: MongoDB и PostgreSQL}\en{Integration of databases: MongoDB and PostgreSQL}.
+    \end{itemize}
+}
+
+\vspace{.1cm}
+
+\entry {2021, 2022}
+{\ru{Летняя Школа Слон в Пущино}\en{Summer School <<Slon>> in Pushchino} - \ru{Волонтер-Преподаватель}\en{Volunteer-Tutor}}
+{\ru{Проведение курсов}\en{Courses taught}: \ru{Формальные языки}\en{Formal languages}, \ru{Математическая логика}\en{Mathematical logic}, \ru{ФП в }\en{FP in} Scala, Python \ru{с нуля}\en{from scratch}.
+}
+
+\section{\ru{Курсы}\en{Courses}}
+\entry {2021
+}
+{\ru{МФТИ}\en{MIPT} - \ru{Теория и практика многопоточной синхронизации}\en{Concurrency course} }
+{\ru{Язык C\texttt{++}}\en{C\texttt{++}}. \ru{Реализация библиотеки для работы с многопоточностью}\en{Implementation of simple concurrency library}: fibers, futures, thread pool.  }
+
+\vspace{.1cm}
+
+\entry {2021
+}
+{\ru{МФТИ}\en{MIPT} - \ru{Распределенные системы}\en{Distributed systems} }
+{\ru{Язык C\texttt{++}}\en{C\texttt{++}}. \ru{Реализация алгоритмов распределенных консенсуса и репликации}\en{Implementation of distributed consensus and replication algorithms}: paxos, multi paxos, raft.  }
+
+\vspace{.1cm}
+
+\entry {2020
+    %\href {https://github.com/InversionSpaces/problems} {Репозиторий} 
+}
+{\ru{Тинькофф.Финтех}\en{Tinkoff.Fintech} - \ru{Курс разработки на Scala}\en{Scala development course} }
+{ \ru{Язык Scala}\en{Scala}. \ru{Разработка RESTful сервиса StopLoss-TakeProfit для тинькофф инвестиций}\en{Impementation of StopLoss-TakeProfit service integrated with tinkoff.investments}. }
+
+\vspace{.1cm}
+
+\entry {2020
+    %\href {https://github.com/InversionSpaces/problems} {Репозиторий} 
+}
+{Mail.ru \ru{Технотрек} - \ru{Введение в промышленное программирование и структуры данных}\en{Introduction to production programming and data structures}}
+{ \ru{Языки C, C\texttt{++}}\en{C, C\texttt{++}}. \ru{Разработка эмулятора стековой машины и компилятора высокоуровнего языка для нее}\en{Implementation of stack machine emulator and high-level language compiler for it}.}
+
+\vspace{.1cm}
+
+\entry {\interval{2017}{2019}
+    %\href {https://github.com/Gravifarsh/FreyaCode} {Репозиторий} 
+}
+{\ru{Воздушно-инженерная школа CanSat в России}\en{Air engineering school in Russia} - \ru{Разработка спускаемого аппарата}\en{Sounding rocket payload development}}
+{ \ru{Язык C для AVR и STM32}\en{C for AVR and STM32}. \ru{Разработка бортовой прошивки спускаемого аппарата}\en{Development of on-board firmware and peripheral drivers}. }
+
+\vspace{.1cm}
+
+\section{\ru{Проекты}\en{Projects}}
+
+\entry {2020}
+{\href {https://gitlab.com/Inversion/gainy}{gainy} - \ru{Сервис с REST API}\en{Service with REST API}}
+{ \ru{Язык Scala}\en{Scala}. \ru{Cервис StopLoss-TakeProfit, интегрированный с тинькофф.инвестиции}\en{StopLoss-TakeProfit service integrated with tinkoff.investments}. }
+
+\vspace{.1cm}
+
+\entry {2019}
+{\href {https://github.com/InversionSpaces/PEGgen}{PEGgen} - \ru{Утилита комнадной строки}\en{Command line utility}}
+{ \ru{Язык Python3}\en{Python3}. \ru{Генерация кода парсера на рекурсивном спуске из формальной грамматики}\en{Generation of recursive descent parser from formal grammar}.}
+
+\vspace{.1cm}
+
+\entry {2021}
+{\href {https://gitlab.com/Inversion/yaelc} {yaelc} - \ru{Компилятор java-подобного языка}\en{Compiler of java-like language}}
+{ \ru{Язык C\texttt{++}}\en{C\texttt{++}}. \ru{Сканер (GNU Flex), LR-парсер (GNU Bison), AST, таблица типов}\en{Scanner (GNU Flex), LR-parser (GNU Bison), AST, type table}.}
+
+\vspace{.1cm}
+
+\entry {\interval{2017}{2019}}
+{\href {https://github.com/cansat-rsce/librscs} {librscs} - \ru{Библиотека драйверов перифирии для микроконтроллеров AVR}\en{Peripheral drivers library for AVR}}
+{ \ru{Язык C для AVR}\en{C for AVR}. \ru{Драйвер модема Iridium9602 и тестирование других модулей}\en{Driver for Iridium9602 modem and testing of other modules}. }
+
+\section{\ru{Образование}\en{Education}}
+\entry {\interval{2019}{\ru{2022}\en{2022}}}
+{\ru{Московский физико-технический институт}\en{Moscow Institute of Physics and Technology} - \\
+    \ru{Физтех-школа прикладной математики и информатики}\en{Phystech School of Applied Mathematics and Informatics} - \\
+    \ru{Информатика и вычислительная техника}\en{Engineering and Computer Science}
+}
+{\ru{Очная форма обучения, бакалавриат.}\en{Bachelor's degree.}}
+
+\section{\ru{Навыки}\en{Skills}}
+\begin{tabular}{ >{\bfseries}r | l }
+    \ru{Языки программирования}\en{Programming languages}     & Scala, C/C\texttt{++}, Python3                        \\
+    \ru{Технологии}\en{Technologies}                          & MongoDB, PostgreSQL, RabbitMQ, Kafka                  \\
+    \ru{Фреймворки и библиотеки}\en{Frameworks and libraries} & ZIO, cats, fs2, akka-http, Aeron                      \\
+    \ru{Инструменты}\en{Tools}                                & git, cmake, sbt, Gitlab CI, Github Actions, liquibase \\
+    \ru{Языки}\en{Languages}                                  & Русский(родной), English(B2)
+\end{tabular}
+
+\vspace{\fill}
+\begin{center}
+    \large
+    \href {https://github.com/InversionSpaces/resume}{\ru{Актуальная версия этого резюме}\en{Up to date version of this CV}}
+\end{center}
 \end{document}
