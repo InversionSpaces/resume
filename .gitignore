@@ -1,0 +1,22 @@
+# Generated RenderCV exports
+/rendercv_output/
+/output/
+
+# Temporary files and local editor settings
+/tmp/
+/.vscode/
+.DS_Store
+
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+
+# LaTeX build intermediates
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
