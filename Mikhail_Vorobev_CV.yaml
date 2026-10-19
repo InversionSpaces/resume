@@ -20,21 +20,20 @@ cv:
         end_date: present
         summary: Research, design, prototype, and evolve Kotlin language features, investigating ecosystem needs and implementation constraints in coordination with compiler, libraries, and other teams.
         highlights:
-          - Built a [K2 compiler-plugin prototype](https://github.com/JetBrains/kotlin-mhp-plugin) to detect potential data races in Kotlin coroutines with interprocedural May-Happen-in-Parallel static analysis.
-          - Designed `lateinit val` / assign-once properties, including runtime semantics, compilation scheme, and framework compatibility.
-          - Prototyped [refinement types](https://github.com/Kotlin/KEEP/blob/main/notes/0006-refinement-types.md) in the Kotlin compiler.
-          - Developed proposals to expose internal type-inference controls to library authors, including the [Explicit Type Parameters KEEP](https://github.com/Kotlin/KEEP/blob/main/proposals/KEEP-0469-explicit-type-parameters.md).
-          - Investigated integrating virtual threads with Kotlin coroutines, focusing on performance trade-offs; co-authored the [KEEP research write-up](https://github.com/Kotlin/KEEP/pull/507).
+          - Build a [K2 compiler-plugin prototype](https://github.com/JetBrains/kotlin-mhp-plugin) to detect potential data races in Kotlin coroutines with interprocedural May-Happen-in-Parallel static analysis.
+          - Design `lateinit val` / assign-once properties, including runtime semantics, the compilation scheme, and compatibility with frameworks.
+          - Prototype [refinement types](https://github.com/Kotlin/KEEP/blob/main/notes/0006-refinement-types.md) in the Kotlin compiler.
+          - Develop proposals to expose internal type-inference controls to library authors, including the [Explicit Type Parameters KEEP](https://github.com/Kotlin/KEEP/blob/main/proposals/KEEP-0469-explicit-type-parameters.md).
+          - Investigate integrating virtual threads with Kotlin coroutines, focusing on performance trade-offs; co-author the [KEEP research write-up](https://github.com/Kotlin/KEEP/pull/507).
       - company: Cloudless Labs (formerly Fluence Labs)
         position: Compiler Engineer
         start_date: 2023
         end_date: 2024
-        summary: Developed the Scala compiler toolchain for Aqua, a language for orchestrating computations in the Fluence peer-to-peer network.
+        summary: Designed Aqua, a language for orchestrating distributed computations across the Fluence peer-to-peer network, and developed its compiler toolchain in Scala.
         highlights:
           - Achieved a **4x speedup in linking** on large projects through compiler optimization.
-          - Worked across parsing, type checking, intermediate representation passes, optimizations, and code generation.
-          - Researched, designed, and implemented language features, including folding over CRDT streams and Unison-inspired class-like constructs called abilities.
-          - Implemented mathematical and Boolean algebra optimizations, and augmented generated code with tracing.
+          - Worked on parsing, type checking, IR passes, optimizations, and code generation.
+          - Researched and implemented language features, including Unison-inspired class-like constructs called abilities and support for folding over CRDT streams.
           - Developed and maintained the Aqua extension for Visual Studio Code.
       - company: Mosaic Research
         position: Backend Engineer
@@ -43,16 +42,18 @@ cv:
         summary: Developed and maintained C++ infrastructure for high-frequency cryptocurrency trading.
         highlights:
           - Implemented an inter-service communication protocol using Aeron.
-          - Built CI pipelines for CMake projects, including builds, tests, caching, and automated dependency updates.
+          - Built CMake CI pipelines with builds, tests, caching, and automated dependency updates.
           - Developed Python 3 scripts and supporting microservices.
       - company: Tinkoff
         position: Backend Engineer
         start_date: 2021
         end_date: 2022
-        summary: Developed and maintained Scala microservices for an online credit broker in the Credit and Brokerage Systems team.
+        summary: Developed and maintained the Scala microservices powering an online credit broker within the Credit and Brokerage Systems team.
         highlights:
-          - Designed and implemented backend business functionality.
-          - Integrated RabbitMQ and Kafka for messaging, and MongoDB and PostgreSQL for data storage.
+          - Integrated a facial recognition service into a fully automated lending workflow, enabling customers to apply for a loan by uploading their passport.
+          - Contributed to the development of an internal webhook service and its partner integrations.
+          - Integrated RabbitMQ and Kafka into backend services for message-based communication.
+          - Implemented MongoDB and PostgreSQL integrations for persistent application data.
     Technical skills:
       - label: Languages
         details: Kotlin, Scala, C, C++, Python 3, TypeScript, Haskell
