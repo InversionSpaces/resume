@@ -2,7 +2,6 @@
 cv:
   name: Mikhail Vorobev
   headline: '[Latest version of this CV](https://github.com/InversionSpaces/resume)'
-  location: Germany
   email: inversionspaces@gmail.com
   phone:
   website:
@@ -13,6 +12,11 @@ cv:
       username: InversionSpaces
     - network: Telegram
       username: purely_injected
+  location: Germany
+  custom_connections:
+    - placeholder: English (B2), Russian (native)
+      fontawesome_icon: language
+      url: null
   sections:
     Experience:
       - company: JetBrains
@@ -104,21 +108,26 @@ cv:
       - name: '[Oolong](https://github.com/leviysoft/oolong) | Scala 3'
         date: 2022
         summary: Developed a library for compile-time query generation for document stores using Scala 3 macros, inspired by Quill.
-      - name: '[yaelc](https://gitlab.com/Inversion/yaelc) | C++'
-        date: 2021
-        summary: 'Built a compiler for a Java-like language: GNU Flex scanner, GNU Bison LR parser, abstract syntax tree, and type table.'
-      - name: '[PEGgen](https://github.com/InversionSpaces/PEGgen) | Python 3'
-        date: 2019
-        summary: Built a command-line tool that generates recursive-descent parsers from formal grammars.
+      # - name: '[yaelc](https://gitlab.com/Inversion/yaelc) | C++'
+      #   date: 2021
+      #   summary: 'Built a compiler for a Java-like language: GNU Flex scanner, GNU Bison LR parser, abstract syntax tree, and type table.'
+      # - name: '[PEGgen](https://github.com/InversionSpaces/PEGgen) | Python 3'
+      #   date: 2019
+      #   summary: Built a command-line tool that generates recursive-descent parsers from formal grammars.
       - name: '[librscs](https://github.com/cansat-rsce/librscs) | C, AVR'
         start_date: 2017
         end_date: 2019
-        summary: Developed an Iridium 9602 modem driver and tested other modules in a peripheral-driver library for AVR microcontrollers.
-    Teaching and languages:
-      - label: Volunteer tutor
-        details: 'Summer School "Slon," Pushchino (2021-2022). Taught formal languages, mathematical logic, functional programming in Scala, and introductory Python.'
-      - label: Languages
-        details: Russian (native), English (B2)
+        summary: Developed an Iridium 9602 modem driver in a peripheral-driver library for AVR microcontrollers.
+    Teaching:
+      - name: Algorithm and Code Training School (ACTS) - Visiting lecturer
+        location: Astana, Kazakhstan
+        date: 2026
+        summary: Delivered a lecture for school students on parsing, ASTs, name resolution, type inference, type checking, control-flow graphs, and static analysis.
+      - name: 'Summer School "Slon" - Volunteer tutor'
+        location: Pushchino, Russia
+        start_date: 2021
+        end_date: 2022
+        summary: Taught school students formal languages, mathematical logic, functional programming in Scala, and introductory Python.
 design:
   theme: classic
   page:

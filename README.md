@@ -11,7 +11,8 @@ rendercv render Mikhail_Vorobev_CV.yaml
 ```
 
 The PDF, page PNGs, Markdown, HTML, and Typst source are generated in
-`rendercv_output/`, which is ignored by Git. Use the built-in templates.
+`rendercv_output/`, which is ignored by Git. The built-in templates are used except
+for `classic/Header.j2.typ`, which places four contacts above location and languages.
 After changes, inspect every PDF page and check the extracted text and exports.
 
 `resume.tex`, `resume_en.pdf`, and `resume_ru.pdf` are legacy references.
