@@ -61,13 +61,9 @@ cv:
           - Implemented MongoDB and PostgreSQL integrations for persistent application data.
     Technical skills:
       - label: Languages
-        details: Kotlin, Scala, C, C++, Python 3, TypeScript, Haskell
-      - label: Frameworks and libraries
-        details: ZIO, Cats, FS2, Akka HTTP, Aeron
-      - label: Data and messaging
-        details: PostgreSQL, MongoDB, Kafka, RabbitMQ
+        details: Kotlin, Lean, Scala, C, C++, Python 3, TypeScript
       - label: Tools
-        details: Git, CMake, sbt, GitLab CI, GitHub Actions, Liquibase
+        details: Git, Docker, Gradle, GitHub Actions
     Education:
       - institution: Constructor University Bremen
         area: Software, Data and Technology
