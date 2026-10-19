@@ -283,3 +283,5 @@ locale:
 settings:
   current_date: '2026-10-19'
   bold_keywords: []
+  render_command:
+    pdf_path: Mikhail_Vorobev_CV.pdf
