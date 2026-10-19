@@ -77,6 +77,29 @@ cv:
         start_date: 2019
         end_date: 2022
         summary: Phystech School of Applied Mathematics and Informatics.
+    Courses:
+      - name: Constructor University Bremen - Semantics of Programming Languages
+        date: 2026
+        summary: Formalized a lambda calculus with subtyping in Lean and proved progress and preservation.
+      - name: Constructor University Bremen - Compilers
+        date: 2026
+        summary: Implemented a compiler for the [LaMa educational language](https://github.com/PLTools/Lama) targeting x86.
+      - name: Moscow Institute of Physics and Technology - Concurrency
+        date: 2021
+        summary: 'Implemented a C++ concurrency library with fibers, futures, and a thread pool.'
+      - name: Moscow Institute of Physics and Technology - Distributed systems
+        date: 2021
+        summary: 'Implemented distributed consensus and replication algorithms in C++: Paxos, Multi-Paxos, and Raft.'
+      # - name: Tinkoff.Fintech - Scala development
+      #   date: 2020
+      #   summary: Developed a RESTful stop-loss/take-profit service in Scala, integrated with Tinkoff Investments.
+      # - name: Mail.ru Technotrek - Introduction to production programming and data structures
+      #   date: 2020
+      #   summary: Implemented a stack-machine emulator and a high-level language compiler targeting it in C and C++.
+      - name: Air Engineering School CanSat in Russia - Sounding rocket payload
+        start_date: 2017
+        end_date: 2019
+        summary: Developed onboard firmware and peripheral drivers in C for AVR and STM32 microcontrollers.
     Projects:
       - name: '[Oolong](https://github.com/leviysoft/oolong) | Scala 3'
         date: 2022
@@ -91,23 +114,6 @@ cv:
         start_date: 2017
         end_date: 2019
         summary: Developed an Iridium 9602 modem driver and tested other modules in a peripheral-driver library for AVR microcontrollers.
-    Courses:
-      - name: MIPT - Concurrency
-        date: 2021
-        summary: 'Implemented a C++ concurrency library with fibers, futures, and a thread pool.'
-      - name: MIPT - Distributed systems
-        date: 2021
-        summary: 'Implemented distributed consensus and replication algorithms in C++: Paxos, Multi-Paxos, and Raft.'
-      - name: Tinkoff.Fintech - Scala development
-        date: 2020
-        summary: Developed a RESTful stop-loss/take-profit service in Scala, integrated with Tinkoff Investments.
-      - name: Mail.ru Technotrek - Introduction to production programming and data structures
-        date: 2020
-        summary: Implemented a stack-machine emulator and a high-level language compiler targeting it in C and C++.
-      - name: Air Engineering School CanSat in Russia - Sounding rocket payload development
-        start_date: 2017
-        end_date: 2019
-        summary: Developed onboard firmware and peripheral drivers in C for AVR and STM32 microcontrollers.
     Teaching and languages:
       - label: Volunteer tutor
         details: 'Summer School "Slon," Pushchino (2021-2022). Taught formal languages, mathematical logic, functional programming in Scala, and introductory Python.'
@@ -181,7 +187,7 @@ design:
     space_below: 0.18cm
   sections:
     allow_page_break: false
-    space_between_regular_entries: 1.2em
+    space_between_regular_entries: 0.6em
     show_time_spans_in: []
   entries:
     date_and_location_width: 4.15cm
