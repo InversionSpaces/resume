@@ -1,6 +1,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
   name: Mikhail Vorobev
+  headline: '[Latest version of this CV](https://github.com/InversionSpaces/resume)'
   location: Germany
   email: inversionspaces@gmail.com
   phone:
@@ -69,11 +70,13 @@ cv:
         degree: Bachelor's
         start_date: 2024
         end_date: present
+        summary: JetBrains Scholarship holder.
       - institution: Moscow Institute of Physics and Technology
-        area: Phystech School of Applied Mathematics and Informatics - Engineering and Computer Science
+        area: Engineering and Computer Science
+        degree: Bachelor's (incomplete)
         start_date: 2019
         end_date: 2022
-        summary: Full-time bachelor's studies; degree not completed.
+        summary: Phystech School of Applied Mathematics and Informatics.
     Projects:
       - name: '[Oolong](https://github.com/leviysoft/oolong) | Scala 3'
         date: 2022
@@ -110,8 +113,6 @@ cv:
         details: 'Summer School "Slon," Pushchino (2021-2022). Taught formal languages, mathematical logic, functional programming in Scala, and introductory Python.'
       - label: Languages
         details: Russian (native), English (B2)
-      - label: Latest CV
-        details: '[CV repository](https://github.com/InversionSpaces/resume)'
 design:
   theme: classic
   page:
@@ -164,7 +165,7 @@ design:
     alignment: center
     photo_width: 3.5cm
     space_below_name: 0.3cm
-    space_below_headline: 0.7cm
+    space_below_headline: 0.3cm
     space_below_connections: 0.35cm
     connections:
       phone_number_format: national
@@ -209,10 +210,11 @@ design:
       main_column: '**LABEL:** DETAILS'
     education_entry:
       main_column: |-
-        **INSTITUTION**, AREA
+        **INSTITUTION**
+        DEGREE in AREA
         SUMMARY
         HIGHLIGHTS
-      degree_column: '**DEGREE**'
+      degree_column: ''
       date_and_location_column: |-
         LOCATION
         DATE
