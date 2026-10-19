@@ -13,132 +13,108 @@ cv:
     - network: Telegram
       username: purely_injected
   sections:
-    Work and volunteering:
-      - company: Cloudless Labs (ex Fluence Labs)
+    Experience:
+      - company: JetBrains
+        position: Language Designer / Researcher
+        start_date: 2025
+        end_date: present
+        summary: Research, design, prototype, and evolve Kotlin language features, investigating ecosystem needs and implementation constraints in coordination with compiler, libraries, and other teams.
+        highlights:
+          - Built a [K2 compiler-plugin prototype](https://github.com/JetBrains/kotlin-mhp-plugin) to detect potential data races in Kotlin coroutines with interprocedural May-Happen-in-Parallel static analysis.
+          - Designed `lateinit val` / assign-once properties, including runtime semantics, compilation scheme, and framework compatibility.
+          - Prototyped [refinement types](https://github.com/Kotlin/KEEP/blob/main/notes/0006-refinement-types.md) in the Kotlin compiler.
+          - Developed proposals to expose internal type-inference controls to library authors, including the [Explicit Type Parameters KEEP](https://github.com/Kotlin/KEEP/blob/main/proposals/KEEP-0469-explicit-type-parameters.md).
+          - Investigated integrating virtual threads with Kotlin coroutines, focusing on performance trade-offs; co-authored the [KEEP research write-up](https://github.com/Kotlin/KEEP/pull/507).
+      - company: Cloudless Labs (formerly Fluence Labs)
         position: Compiler Engineer
         start_date: 2023
         end_date: 2024
-        location:
-        summary: Developed compiler toolchain for Aqua, a P2P computation orchestration language 
+        summary: Developed the Scala compiler toolchain for Aqua, a language for orchestrating computations in the Fluence peer-to-peer network.
         highlights:
-          - Researched, designed and implemented language features and compiler optimizations.
-          - Optimized linking stage gaining 4x speedup on large projects.
-          - Developed and maintained the VSCode extension.
+          - Achieved a **4x speedup in linking** on large projects through compiler optimization.
+          - Worked across parsing, type checking, intermediate representation passes, optimizations, and code generation.
+          - Researched, designed, and implemented language features, including folding over CRDT streams and Unison-inspired class-like constructs called abilities.
+          - Implemented mathematical and Boolean algebra optimizations, and augmented generated code with tracing.
+          - Developed and maintained the Aqua extension for Visual Studio Code.
       - company: Mosaic Research
         position: Backend Engineer
         start_date: 2022
         end_date: 2023
-        location:
-        summary: Crypto HFT (C++) — Development and maintenance of infrastructure for crypto trading
+        summary: Developed and maintained C++ infrastructure for high-frequency cryptocurrency trading.
         highlights:
-          - Implementing microservices communication protocol with Aeron.
-          - 'Setting up CI pipeline for CMake projects: building, testing, caching, automatic dependecies updating.'
-          - Developing scripts and small microservices with python3.
+          - Implemented an inter-service communication protocol using Aeron.
+          - Built CI pipelines for CMake projects, including builds, tests, caching, and automated dependency updates.
+          - Developed Python 3 scripts and supporting microservices.
       - company: Tinkoff
         position: Backend Engineer
         start_date: 2021
         end_date: 2022
-        location:
-        summary: Credit and Brokerage Systems (Scala) — Development and maintenance of online credit broker backend on microservice architecture
+        summary: Developed and maintained Scala microservices for an online credit broker in the Credit and Brokerage Systems team.
         highlights:
-          - Design and implementation of business functionality.
-          - 'Integration of message brokers: RabbitMQ and Kafka.'
-          - 'Integration of databases: MongoDB and PostgreSQL.'
-      - company: Summer School "Slon" in Pushchino
-        position: Volunteer-Tutor
-        start_date: 2021
-        end_date: 2022
-        location:
-        summary: 'Courses taught: Formal languages, Mathematical logic, FP in Scala, Python from scratch.'
-        highlights:
-    Courses:
-      - name: MIPT - Concurrency course
-        start_date: 2021
-        end_date: 2021
-        location:
-        summary: 'C++. Implementation of simple concurrency library: fibers, futures, thread pool.'
-        highlights:
-      - name: MIPT - Distributed systems
-        start_date: 2021
-        end_date: 2021
-        location:
-        summary: 'C++. Implementation of distributed consensus and replication algorithms: paxos, multi paxos, raft.'
-        highlights:
-      - name: Tinkoff.Fintech - Scala development course
-        start_date: 2020
-        end_date: 2020
-        location:
-        summary: Scala. Impementation of StopLoss-TakeProfit service integrated with tinkoff.investments.
-        highlights:
-      - name: Mail.ru Technotrek - Introduction to production programming and data structures
-        start_date: 2020
-        end_date: 2020
-        location:
-        summary: 'C, C++. Implementation of stack machine emulator and high-level language compiler for it.'
-        highlights:
-      - name: Air engineering school in Russia - Sounding rocket payload development
-        start_date: 2017
-        end_date: 2019
-        location:
-        summary: C for AVR and STM32. Development of on-board firmware and peripheral drivers.
-        highlights:
-    Projects:
-      - name: '[Oolong](https://github.com/leviysoft/oolong) - Compile-time query generation lib for document stores'
-        start_date: 2022
-        end_date: 2022
-        location:
-        summary: Scala. Compile-time query generation implemented with scala3 macros. Inspired by Quill.
-        highlights:
-      - name: '[PEGgen](https://github.com/InversionSpaces/PEGgen) - Command line utility'
-        start_date: 2019
-        end_date: 2019
-        location:
-        summary: Python3. Generation of recursive descent parser from formal grammar.
-        highlights:
-      - name: '[yaelc](https://gitlab.com/Inversion/yaelc) - Compiler of java-like language'
-        start_date: 2021
-        end_date: 2021
-        location:
-        summary: 'C++. Scanner (GNU Flex), LR-parser (GNU Bison), AST, type table.'
-        highlights:
-      - name: '[librscs](https://github.com/cansat-rsce/librscs) - Peripheral drivers library for AVR'
-        start_date: 2017
-        end_date: 2019
-        location:
-        summary: C for AVR. Driver for Iridium9602 modem and testing of other modules.
-        highlights:
+          - Designed and implemented backend business functionality.
+          - Integrated RabbitMQ and Kafka for messaging, and MongoDB and PostgreSQL for data storage.
+    Technical skills:
+      - label: Languages
+        details: Kotlin, Scala, C, C++, Python 3, TypeScript, Haskell
+      - label: Frameworks and libraries
+        details: ZIO, Cats, FS2, Akka HTTP, Aeron
+      - label: Data and messaging
+        details: PostgreSQL, MongoDB, Kafka, RabbitMQ
+      - label: Tools
+        details: Git, CMake, sbt, GitLab CI, GitHub Actions, Liquibase
     Education:
       - institution: Constructor University Bremen
         area: Software, Data and Technology
         degree: Bachelor's
         start_date: 2024
         end_date: present
-        location:
-        summary:
-        highlights:
       - institution: Moscow Institute of Physics and Technology
         area: Phystech School of Applied Mathematics and Informatics - Engineering and Computer Science
-        degree: Bachelor's (unfinished)
         start_date: 2019
         end_date: 2022
-        location:
-        summary:
-        highlights:
-    Skills:
-      - label: Programming languages
-        details: Scala, C/C++, Python3, TypeScript, Haskell
-      - label: Technologies
-        details: MongoDB, PostgreSQL, RabbitMQ, Kafka
-      - label: Frameworks and libraries
-        details: ZIO, cats, fs2, akka-http, Aeron
-      - label: Tools
-        details: git, cmake, sbt, Gitlab CI, Github Actions, liquibase
+        summary: Full-time bachelor's studies; degree not completed.
+    Projects:
+      - name: '[Oolong](https://github.com/leviysoft/oolong) | Scala 3'
+        date: 2022
+        summary: Developed a library for compile-time query generation for document stores using Scala 3 macros, inspired by Quill.
+      - name: '[yaelc](https://gitlab.com/Inversion/yaelc) | C++'
+        date: 2021
+        summary: 'Built a compiler for a Java-like language: GNU Flex scanner, GNU Bison LR parser, abstract syntax tree, and type table.'
+      - name: '[PEGgen](https://github.com/InversionSpaces/PEGgen) | Python 3'
+        date: 2019
+        summary: Built a command-line tool that generates recursive-descent parsers from formal grammars.
+      - name: '[librscs](https://github.com/cansat-rsce/librscs) | C, AVR'
+        start_date: 2017
+        end_date: 2019
+        summary: Developed an Iridium 9602 modem driver and tested other modules in a peripheral-driver library for AVR microcontrollers.
+    Courses:
+      - name: MIPT - Concurrency
+        date: 2021
+        summary: 'Implemented a C++ concurrency library with fibers, futures, and a thread pool.'
+      - name: MIPT - Distributed systems
+        date: 2021
+        summary: 'Implemented distributed consensus and replication algorithms in C++: Paxos, Multi-Paxos, and Raft.'
+      - name: Tinkoff.Fintech - Scala development
+        date: 2020
+        summary: Developed a RESTful stop-loss/take-profit service in Scala, integrated with Tinkoff Investments.
+      - name: Mail.ru Technotrek - Introduction to production programming and data structures
+        date: 2020
+        summary: Implemented a stack-machine emulator and a high-level language compiler targeting it in C and C++.
+      - name: Air Engineering School CanSat in Russia - Sounding rocket payload development
+        start_date: 2017
+        end_date: 2019
+        summary: Developed onboard firmware and peripheral drivers in C for AVR and STM32 microcontrollers.
+    Teaching and languages:
+      - label: Volunteer tutor
+        details: 'Summer School "Slon," Pushchino (2021-2022). Taught formal languages, mathematical logic, functional programming in Scala, and introductory Python.'
       - label: Languages
         details: Russian (native), English (B2)
+      - label: Latest CV
+        details: '[CV repository](https://github.com/InversionSpaces/resume)'
 design:
   theme: classic
   page:
-    size: us-letter
+    size: a4
     top_margin: 2cm
     bottom_margin: 2cm
     left_margin: 2cm
@@ -156,7 +132,7 @@ design:
     top_note: rgb(128, 128, 128)
   typography:
     line_spacing: 0.6em
-    alignment: justified
+    alignment: left
     date_and_location_column_alignment: right
     font_family:
       body: Source Sans 3
@@ -165,8 +141,8 @@ design:
       connections: Source Sans 3
       section_titles: Source Sans 3
     font_size:
-      body: 10pt
-      name: 30pt
+      body: 11pt
+      name: 26pt
       headline: 10pt
       connections: 10pt
       section_titles: 1.4em
@@ -186,9 +162,9 @@ design:
   header:
     alignment: center
     photo_width: 3.5cm
-    space_below_name: 0.7cm
+    space_below_name: 0.3cm
     space_below_headline: 0.7cm
-    space_below_connections: 0.7cm
+    space_below_connections: 0.35cm
     connections:
       phone_number_format: national
       hyperlink: true
@@ -199,17 +175,17 @@ design:
   section_titles:
     type: with_partial_line
     line_thickness: 1pt
-    space_above: 0.5cm
-    space_below: 0.3cm
+    space_above: 0.3cm
+    space_below: 0.18cm
   sections:
-    allow_page_break: true
+    allow_page_break: false
     space_between_regular_entries: 1.2em
     show_time_spans_in: []
   entries:
     date_and_location_width: 4.15cm
     side_space: 0.2cm
     space_between_columns: 0.1cm
-    allow_page_break: true
+    allow_page_break: false
     short_second_row: false
     degree_width: 2cm
     summary:
@@ -291,5 +267,5 @@ locale:
     - November
     - December
 settings:
-  current_date: '2026-04-26'
+  current_date: '2026-10-19'
   bold_keywords: []
